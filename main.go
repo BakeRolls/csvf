@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if len(os.Args) < 3 {
-		log.Fatalf("Usage: %s foo.csv Hello %%1!]", os.Args[0])
+		log.Fatalf("Usage: %s foo.csv artist=\"%%2\"", os.Args[0])
 	}
 
 	format := strings.Join(os.Args[2:], " ")
