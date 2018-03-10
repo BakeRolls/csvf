@@ -43,7 +43,7 @@ func main() {
 		}
 		values := make([]interface{}, len(indices))
 		for i, j := range indices {
-			if i >= len(record) {
+			if j >= len(record) {
 				log.Fatalf("index %d bigger than max value %d", j, len(record)-1)
 			}
 			values[i] = record[j]
